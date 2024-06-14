@@ -12,4 +12,6 @@ npm run dev
 ## sample
 cargo new sample
 cd sample
-cargo run
+
+### 外部モック起動
+TWAPI_V2_TWITTER_API_PREFIX_API=http://localhost:3000 cargo run

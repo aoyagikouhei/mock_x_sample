@@ -56,9 +56,5 @@ async fn main() -> anyhow::Result<()> {
     });
     let _ = execute_x(twapi_options).await?;
     mock.assert();
-
-    // 外部モック
-    // TWAPI_V2_TWITTER_API_PREFIX_API=http://localhost:3000 cargo run
-
     Ok(())
 }
