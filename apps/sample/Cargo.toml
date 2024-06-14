@@ -1,0 +1,10 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+mockito = "1.4"
+twapi-v2 = { version = "0.15", default-features = false, features = ["rustls-tls", "oauth10a"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync"] }
